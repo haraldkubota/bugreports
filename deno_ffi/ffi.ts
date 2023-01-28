@@ -9,7 +9,7 @@ const dylib = Deno.dlopen(
     {
         "socket_open": {parameters: ["buffer"], result: "i32"},
         "socket_close": {parameters: ["i32"], result: "i32"},
-        "get_mac_addr": {parameters: ["void"], result: "i32"},
+        "get_mac_addr": {parameters: ["void"], result: "u64"},
         // "get_ifrindex": {parameters: ["void"], result: "i64"},
         // "socket_send": {parameters: ["i32", "u64", "u64", "u32", "buffer", "u32", "u32"], result: "i32"},
     } as const,
